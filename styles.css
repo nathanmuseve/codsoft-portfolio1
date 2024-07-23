@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  height: 56px;
+  height: auto;
   overflow: hidden;
 }
 #navBar nav ul {
@@ -42,6 +42,15 @@ body {
   background-color: rgba(0,0,0, 0.8);
   color: rgb(220, 20, 110);
   transition: all 0.2;
+}
+#navBar i {
+  display: none;
+  position: absolute;
+  right: 12px;
+  color: rgb(19, 18, 18);
+  font-size: 33px;
+  padding: 0;
+  background-color: rgb(0, 128, 255);
 }
 /* Home section  */
 .home {
@@ -78,22 +87,26 @@ h1 {
   flex-wrap: wrap;
 }
 .align {
-  max-height: 400px;
-  min-width: 200px;
-  max-width: 360px;
   background: white;
   text-align: justify;
   font-size: 1.5rem;
   border-radius: 2px;
   overflow: auto;
-  margin: 0 auto;
+  margin: 2rem;
 }
 .align:hover:not(2) {
   background-color: rgb(173, 167, 167);
 }
-.align p {
+p, li {
   text-align: justify;
-  margin: 12px;
+  padding: 5px 1rem;
+}
+h1, h2, h3 {
+  text-align: center;
+
+}
+li {
+  list-style: none;
 }
 .align h2 {
   color: rgb(0, 128, 255);
@@ -127,3 +140,62 @@ h1 {
   background-color: rgba(0, 0,0, 0.8);
   color: rgb(0, 128,255);
 }
+.letsTalk {
+  text-align: center;
+}
+ .letsTalk a{
+  text-decoration: none;
+  color: white;
+  padding: 12px 1.5rem;
+  background-color: rgb(17, 74, 160);
+  border-radius: 4px;
+ }
+ .letsTalk a:hover {
+  background-color: rgba(0, 0,0, 0.8);
+ }
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 20px;
+  margin: 1rem;
+}
+i {
+  color: white;
+  padding: 6px;
+  margin: 8px;
+  background-color: rgb(16, 17, 18);
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.flex a{
+  text-decoration: none;
+  color: black;
+}
+
+ /* MEDIA QUERY  */ 
+ @media (max-width:768px) {
+  #navBar span {
+    display: inline;
+  }
+  #navBar nav {
+    height: 100%;
+  }
+  #navBar nav #nav {
+    display: none;
+    max-height: 100%;
+    margin-top: 2.5rem;
+    gap: 1rem;
+  }
+  #navBar nav ul li {
+    list-style: none;
+    padding: 15% 20px;
+  }
+  #navBar i {
+    display: block;
+  }
+ }
