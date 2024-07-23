@@ -123,10 +123,6 @@ li {
   color: white;
 }
 .myjourney {
-  max-width: 80%;
-  min-width: none;
-  max-height: none;
-  min-height: none;
   margin: 1rem auto;
   background-color: rgb(0, 128, 255);
   color: white;
@@ -140,6 +136,31 @@ li {
   background-color: rgba(0, 0,0, 0.8);
   color: rgb(0, 128,255);
 }
+/* PROJECTS  */
+.projects {
+  margin:2rem;
+}
+.projo ul  {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.projo li {
+  width: 400px;
+  padding:  2rem;
+  margin: 1rem auto;
+  background-color: rgb(53, 143, 221);
+  border-radius: 6px;
+}
+.projo li a {
+  align-items: center;
+  text-decoration: none;
+  font: 24px bolder;
+  color: white;
+}
+   /* FOOTER  */
 .letsTalk {
   text-align: center;
 }
@@ -170,7 +191,7 @@ i {
 .flex {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 .flex a{
   text-decoration: none;
